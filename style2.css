@@ -1,0 +1,32 @@
+.img3{
+    background-color: black;
+    border-radius: 10px;
+    width: 500px;
+    height: 550px;
+    object-fit: cover;
+    display:block;
+    margin:0px auto;
+    text-align:center;
+    
+}
+
+span{
+    float: right;
+    text-transform: uppercase;
+}
+
+h1{
+    text-align: center;
+
+}
+
+body{
+    background-color: #b7b19f;
+}
+
+.contenitore{
+    display: flex;
+    justify-content: right;
+    margin:0px auto;
+    text-align:center;
+}

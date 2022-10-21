@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazione HTML + CSS + (JS)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+</head>
+<body>
+   <header>
+
+    <input autocomplete="off" class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu" onclick="toggleMenu()">
+        <span class="hamb-line"></span>
+    </label>
+
+    <nav id="navbar">
+        <ul>
+            <li class="voce-menu">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="voce-menu">
+                <a href="contatti.html">Contatti</a>
+            </li>
+
+           </li>
+
+        </ul>
+
+    </nav>
+   </header>
+   <main>
+    <h1 class="titolo">AUTOBIOGRAFIA VINCENZO TARANTINO</h1>
+    <div class="columns">
+        <div class="img1">
+            <a href="life.html" title="immagine vita con link"><img class="img1" src="life.jpg"></a> <!--Link dentro un'immagine-->
+        </div>
+        <div class="img2">
+            <a href="esperienze accademiche e lavorative.html" title="immagine esperienze con link"><img class="img1" class="img2" src="esperienze.jpg"></a>
+        </div>
+        <div>
+            <a href="hobby, passioni ed interessi.html" title="immagine con link"><img class = "img1" src="hobby.webp"></a>
+        </div>
+    </div>
+
+   </main>
+
+
+
+</body>
+</html>
