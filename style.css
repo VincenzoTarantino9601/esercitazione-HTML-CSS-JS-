@@ -1,36 +1,50 @@
 body{
     background-color: #b7b19f;
+ 
 }
 
-.columns{
-    column-width: auto;
-    column-count: 3;
-    overflow: hidden;
-    column-gap: 130px;
-    margin-left: 50px;
-    column-fill: balance;
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
 }
 
-
-.img1{
-    background-color: black;
-    border-radius: 10px;
-    width: 350px;
-    height: 400px;
-    object-fit: cover;
+.colonna{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.img2{
+.colonna:nth-child(2){ /*abbasso la card centrale (il secondo figlio)*/
     padding-top: 50px;
 }
 
-.img3{
-    background-color: black;
-    border-radius: 10px;
-    width: 500px;
-    height: 550px;
+.colonna .card{
+    width: 350px;
+    height: 400px;
+}
+
+.colonna .card a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    transition: 1.5s;
+    margin: 0 auto;
+}
+
+.colonna .card a:hover{
+    width: 80%;
+    height: 90%;
+}
+
+.colonna .card a img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin: auto;
+    border-radius: 15px;
 }
 
 figcaption{
@@ -38,11 +52,21 @@ figcaption{
     text-align: center;
 }
 
-.titolo{
+
+
+.titolo-bottom{
+    position: absolute;
+    width: 85%;
+    bottom: 0px;
+    left: 0px;
+    transform: translateY(50%);
     font-size: 70px;
-    overflow: hidden;
     text-align: center;
-    padding-top: 5px;
+}
+
+
+a{
+    text-decoration: none;
 }
 
 nav ul {
@@ -56,7 +80,7 @@ nav ul {
 
 
 
-/* Stile per la creazione di un menu responsive */
+
 nav {
     width: 100%;
     height: fit-content;
@@ -71,8 +95,9 @@ nav ul a {
     height: 70px;
     line-height: 75px;
     color: #000000;
-    background-color: #fff;
+    background-color: #b7b19f;
     transition: all 0.3s ease;
+
 }
 nav ul a:hover {
     background-color: rgb(0, 0, 0);
@@ -94,7 +119,7 @@ header h2 {
 
 
 
-/* Hamburger Menu Icon */
+
 .hamb{
     cursor: pointer;
     position: absolute;
@@ -102,7 +127,7 @@ header h2 {
     top: 0;
     padding: 40px 20px;
     z-index: 999;
-}/* Style label tag */
+}
 
 .hamb-line {
     background-color: #000000;
@@ -111,7 +136,7 @@ header h2 {
     position: relative;
     width: 24px;
 
-} /* Style span tag */
+} 
 
 .hamb-line::before,
 .hamb-line::after {
@@ -132,11 +157,11 @@ header h2 {
 
 .side-menu {
     display: none;
-} /* Hide checkbox */
+} 
 
 
 
-/* Toggle menu icon */
+
 
 .side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
@@ -155,7 +180,7 @@ media con min-width: 768px significa:
 Se la dimensione della finestra del browser è ALMENO
 768px, allora applichi le regole dentro il blocco seguente
 */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
     nav{
         max-height: none;
@@ -174,5 +199,16 @@ Se la dimensione della finestra del browser è ALMENO
 
     .hamb{
         display: none;
+    }
+
+    .titolo-top{
+        position: absolute;
+        width: 85%;
+        top: 0px;
+        left: 0px;
+        transform: translateY(-50%);
+        font-size: 70px;
+        text-align: center;
+    
     }
 }

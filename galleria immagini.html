@@ -7,16 +7,32 @@
     <title>Galleria</title>
     <link rel="stylesheet" href="galleria immagini.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js"></script>
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="galleria immagini.html">Galleria</a></li>
-            </ul>
-        </nav>
-       </header>  
+  <header>
+    <input autocomplete="off" class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu" onclick="toggleMenu()">
+        <span class="hamb-line"></span>
+    </label>
+    <nav id="navbar">
+        <ul>
+            <li class="voce-menu">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="voce-menu">
+                <a href="galleria immagini.html">Galleria</a>
+            </li>
+
+           </li>
+
+        </ul>
+    </nav>
+</header> 
+
+  <h1 class="titolo-top">GALLERIA</h1>
 
 
 <div class="slideshow-container">
@@ -53,6 +69,8 @@
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
-  <script src="galleria immagini.js"></script>
+<script src="galleria immagini.js"></script>
+
+
 </body>
 </html>
