@@ -3,10 +3,12 @@ body{
 }
 
 .columns{
-    column-width: 100px;
+    column-width: auto;
     column-count: 3;
     overflow: hidden;
-    column-gap: 50px;
+    column-gap: 130px;
+    margin-left: 50px;
+    column-fill: balance;
 }
 
 
@@ -31,20 +33,37 @@ body{
     margin: auto;
 }
 
-.titolo{
-    font-size: 100px;
-    overflow: hidden;
+figcaption{
+    font-size: 20px;
     text-align: center;
-    padding-top: 80px;
 }
 
+.titolo{
+    font-size: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+
+
+
+
+
 /* Stile per la creazione di un menu responsive */
-header{
-    position: fixed;
-    top: 0px;
-    left: 0px;
+nav {
     width: 100%;
-    background-color: transparent;
+    height: fit-content;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+
 }
 nav ul a {
     display: block;
@@ -52,14 +71,8 @@ nav ul a {
     height: 70px;
     line-height: 75px;
     color: #000000;
-    background-color: #b7b19f;
+    background-color: #fff;
     transition: all 0.3s ease;
-}
-nav ul{
-    list-style-type: none;
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
 }
 nav ul a:hover {
     background-color: rgb(0, 0, 0);
@@ -142,7 +155,7 @@ media con min-width: 768px significa:
 Se la dimensione della finestra del browser è ALMENO
 768px, allora applichi le regole dentro il blocco seguente
 */
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
 
     nav{
         max-height: none;
